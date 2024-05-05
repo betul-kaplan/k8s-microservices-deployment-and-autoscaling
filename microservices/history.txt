@@ -1,0 +1,62 @@
+    1  export PS1="\[\e[1;34m\]\u\[\e[33m\]@\h# \W:\[\e[32m\]\\$\[\e[m\] "
+    2  export PS1="\[\e[1;31m\]\u\[\e[33m\]@\h# \W:\[\e[34m\]\\$\[\e[m\] "
+    3  export PS1="\[\e[1;31m\]\u\[\e[1;36m\]\[\033[32m\]@\h/\[\e[0m\]\[\e[1;32m\]\W\[\e[0m\]\$(parse_git_branch) "
+    4  exit
+    5  export PS1="\[\e[1;31m\]\u\[\e[33m\]@\h# \W:\[\e[34m\]\\$\[\e[m\]
+    6  bash
+    7  q
+    8  exit
+    9  export PS1="\[\e[1;31m\]\u\[\e[1;36m\]\[\033[m\]@LinuxServer:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+   10  bash
+   11  exit
+   12  kubectl cluster-info
+   13  k cluster-info
+   14  k get pod
+   15  k get no
+   16  mkdir microservices
+   17  cd microservices
+   18  mkdir to-do
+   19  cd to-do
+   20  ls
+   21  k apply -f .
+   22  k get pv,pvc
+   23  k get po
+   24  k get svc
+   25  k exec -it db-deployment-848f57bcd6-pcrwd -- sh
+   26  cd ..
+   27  kubectl get pv
+   28  kubectl get svc
+   29  mkdir php-apache
+   30  cd php-apache
+   31  kubectl apply -f .
+   32  k get po
+   33  k get svc
+   34  ls
+   35  k get po
+   36  k exec -it -- sh 
+   37  k exec -it php-apache-57cf4d8f79-v24bq -- sh 
+   38  k get po
+   39  curl 44.193.203.8:30002
+   40  cd ..
+   41  mkdir auto-scaling && cd auto-scaling
+   42  ls
+   43  k apply -f .
+   44  k describe hpa
+   45  kubectl delete -n kube-system deployments.apps metrics-server
+   46  wget https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.5.0/components.yaml
+   47  kubectl apply -f components.yaml
+   48  k get po -n kubesystem
+   49  k get po -n kube-system
+   50  k top po
+   51  k top no
+   52  kubectl get hpa
+   53  k get svc
+   54  k run -it --rm load-generator --image=busybox /bin/sh
+   55  history
+   56  history -o > history.txt
+   57  echo history -o > history.txt
+   58  ls
+   59  cat history.txt 
+   60  rm history.txt 
+   61  ls
+   62  history > history.txt
